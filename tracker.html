@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Academic Tracker | Your Name</title>
+<meta name="description" content="Academic portfolio and student management site of Your Name.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="index.html">Your Name</a>
+<button id="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+<nav aria-label="Main"><ul id="nav-list">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="tracker.html" aria-current="page">Academic Tracker</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></nav></div></header>
+<main><div class="wrap">
+<h1>Academic tracker</h1>
+<p class="lead">Calculate your GPA and manage your tasks. Data stays in your browser.</p>
+<section><h2>GPA calculator</h2><div class="card">
+<div id="courses"></div>
+<button class="btn alt" id="add-course" type="button">Add course</button>
+<p><strong>GPA (5.0 scale): <span id="gpa">–</span></strong></p>
+<p class="err" id="gpa-err" role="alert"></p></div></section>
+<section><h2>Tasks and deadlines</h2><div class="card">
+<label for="t-text">Task</label><input id="t-text">
+<label for="t-date">Due date</label><input id="t-date" type="date">
+<p class="err" id="t-err" role="alert"></p>
+<button class="btn" id="add-task" type="button">Add task</button>
+<ul class="tasks" id="task-list"></ul></div></section>
+</div></main>
+<footer><div class="wrap">&copy; <span id="yr">2026</span> Your Name. Built with HTML, CSS and JavaScript.</div></footer>
+<script src="js/main.js"></script>
+</body></html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Your Name</title>
+<meta name="description" content="Academic portfolio and student management site of Your Name.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="index.html">Your Name</a>
+<button id="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+<nav aria-label="Main"><ul id="nav-list">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="tracker.html">Academic Tracker</a></li>
+<li><a href="contact.html" aria-current="page">Contact</a></li>
+</ul></nav></div></header>
+<main><div class="wrap">
+<h1>Contact</h1>
+<p class="lead">Send a message, or email me at <a href="mailto:you@example.com">you@example.com</a>.</p>
+<form id="cf" class="card" novalidate style="max-width:560px">
+<label for="n">Name</label><input id="n" required><div class="err" id="n-e"></div>
+<label for="e">Email</label><input id="e" type="email" required><div class="err" id="e-e"></div>
+<label for="m">Message</label><textarea id="m" rows="5" required></textarea><div class="err" id="m-e"></div>
+<button class="btn" type="submit">Send message</button>
+<p id="cf-ok" role="status"></p></form>
+</div></main>
+<footer><div class="wrap">&copy; <span id="yr">2026</span> Your Name. Built with HTML, CSS and JavaScript.</div></footer>
+<script src="js/main.js"></script>
+</body></html>
